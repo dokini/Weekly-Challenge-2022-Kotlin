@@ -1,0 +1,17 @@
+#15 es un numero armstrong?
+#doko
+
+def numero_armstrong(number):
+    numero = str(number)
+    longitud = len(numero)
+    almacenar = 0
+    for x in numero:
+        potenciar = pow(int(x),longitud)
+        almacenar = almacenar + potenciar
+    if almacenar == int(numero):
+        return True
+    else:
+        return False
+    
+
+print(numero_armstrong(153))
